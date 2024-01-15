@@ -1,16 +1,35 @@
-:root {
-    --var-col: 1fr;
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   
-  .container {
+  .square {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+  
+    transition-property: box-shadow, transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+  
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+  }
+  
+  .square:is(:hover, :focus) {
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+  }
+  
+  /* Decorative styles */
+  body {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    gap: 10px;
-    background-color: var(--color-stroke);
-    padding: 1em;
-    max-width: 70rem;
-  }
-  
-  select {
-    min-width: unset;
+    place-items: center;
   }
