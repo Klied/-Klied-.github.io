@@ -13,12 +13,17 @@ function show(shown, hidden) {
     
   <div id="My Website">
     <p>This is my website.</p>
-    <a href="#" onclick="return show('About Page','My Website');">Show About Page</a>
+    <button>
+        <a href="#" onclick="return show('About Page','My Website');">Show About Page</a>
+    </button>
+    
   </div>
     
   <div id="About Page" style="display:none">
     This is my About Page
-    <a href="#" onclick="return show('My Website','About Page');">Show Homepage</a>
+    <button>
+        <a href="#" onclick="return show('My Website','About Page');">Show Homepage</a>
+    </button>
   </div>
     
 </body>
