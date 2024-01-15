@@ -18,30 +18,70 @@ function show(shown, hidden) {
     <marquee> <b>My Personal Website about myself and what I have learned and some that I learned on the side</b> </marquee>
   <div id="My Website">
     <p>This is my Homepage.</p>
-    
+    <div class="ccontainer">
+        <button><a href="#" onclick="return show('Interests Page','My Website');">Show About Page</a></button>
+        <button><a href="#" onclick="return show('Projects Page','My Website');">Show About Page</a></button>
+        <button><a href="#" onclick="return show('Achievements Page','My Website');">Show About Page</a></button>
+        <button><a href="#" onclick="return show('skills Page','My Website');">Show About Page</a></button>
+        <button><a href="#" onclick="return show('About Page','My Website');">Show About Page</a></button>
+    </div>
     
   </div>
  
-<div class="ccontainer">
-    <button><a href="#" onclick="return show('About Page','My Website');">
-        Show About Page
-    </a></button>
-</div>
+
   
-    <div class="wrapper">
-    <div class="square" tabindex="0">
+    
         <div id="About Page" style="display:none">
-            This is my About Page
+            This is  About me
+            <div class="ccontainer"></div>
             <button>
                 <a href="#" onclick="return show('My Website','About Page');">
                     Show Homepage
-                </a></button>
+                </a>
+            </button>
             </div>
         </div>
+    
+    
+    <div id="About Page" style="display:none">
+        These are my Interests
+        <button>
+            <a href="#" onclick="return show('My Website','About Page');">
+                Show Homepage
+            </a>
+        </button>
     </div>
-   
 
   
+    <div id="About Page" style="display:none">
+        These are my Projects 
+        <button>
+            <a href="#" onclick="return show('My Website','About Page');">
+                Show Homepage
+            </a>
+        </button>
+    </div>
+
+    <div id="About Page" style="display:none">
+        These are my Achievements Page
+        <button>
+            <a href="#" onclick="return show('My Website','About Page');">
+                Show Homepage
+            </a>
+        </button>
+    </div>
+
+
+    <div id="About Page" style="display:none">
+        These are my skills Page
+        <button>
+            <a href="#" onclick="return show('My Website','About Page');">
+                Show Homepage
+            </a>
+        </button>
+    </div>
+
+
     </div> 
 </body>
 </html>
