@@ -10,7 +10,11 @@ function show(shown, hidden) {
 </script>
 <style>
     body {
-      background-color: crimson;
+      background-color: silver;
+      width: 1300px;
+      border: 15px solid navy;
+      padding: 20px;
+      margin: 2px;     
     }
     .box {
     width: 50px;
@@ -23,14 +27,21 @@ function show(shown, hidden) {
     align-items: center;
     font-size: 24px;
   }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  background-color: silver;
+}
 
-    div {
+.flex-container > div {
   background-color: silver;
   width: 1300px;
   border: 15px solid navy;
   padding: 20px;
   margin: 2px;
 }
+
+    
 
 #myBtn {
   display: none;
@@ -64,7 +75,12 @@ html {
   margin-top: 100%;
   padding-bottom: 25%;
  }
+ 
+
+
+
 </style>
+<script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
 <title>My Personal Website about myself and what I have learned and some that I learned on the side</title>
 </head>
 <body>
@@ -73,9 +89,8 @@ html {
     
     
     <marquee> <b>My Personal Website about myself and what I have learned and some that I learned on the side</b> </marquee>
- <h1> <div id="My Website" class="ccontainer">
-    <p>This is my Homepage.</p>
-     
+ <h1> <p>This is my Homepage.</p>
+    <div id="My Website" class="flex-container">   
         <button><a href="#down" onclick="return show('Interests Page','My Website');"><div id="down"><h3>Interests Page</h3></div></a></button>
         <button><a href="#down" onclick="return show('Projects Page','My Website');"><div id="down"><h3>Projects Page</h3></div></a></button>
         <button><a href="#down" onclick="return show('Achievements Page','My Website');"><div id="down"><h3>Achievements Page</h3></div></a></button>
@@ -239,7 +254,7 @@ html {
     </button>
 </div>                
     </div> 
-<script>
+<script  type="text/javascript">
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
