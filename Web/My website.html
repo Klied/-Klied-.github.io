@@ -51,6 +51,19 @@ function show(shown, hidden) {
 #myBtn:hover {
   background-color: #555;
 }
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ } 
+ 
+ #down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+ }
 </style>
 <title>My Personal Website about myself and what I have learned and some that I learned on the side</title>
 </head>
@@ -63,11 +76,11 @@ function show(shown, hidden) {
  <h1> <div id="My Website" class="ccontainer">
     <p>This is my Homepage.</p>
      
-        <button><a href="#" onclick="return show('Interests Page','My Website');"><h3>Interests Page</h3></a></button>
-        <button><a href="#" onclick="return show('Projects Page','My Website');"><h3>Projects Page</h3></a></button>
-        <button><a href="#" onclick="return show('Achievements Page','My Website');"><h3>Achievements Page</h3></a></button>
-        <button><a href="#" onclick="return show('skills Page','My Website');"><h3>skills Page</h3></a></button>
-        <button><a href="#" onclick="return show('About Page','My Website');"><h3>About Page</h3></a></button>
+        <button><a href="#down" onclick="return show('Interests Page','My Website');"><div id="down"><h3>Interests Page</h3></div></a></button>
+        <button><a href="#down" onclick="return show('Projects Page','My Website');"><div id="down"><h3>Projects Page</h3></div></a></button>
+        <button><a href="#down" onclick="return show('Achievements Page','My Website');"><div id="down"><h3>Achievements Page</h3></div></a></button>
+        <button><a href="#down" onclick="return show('skills Page','My Website');"><div id="down"><h3>skills Page</h3></div></a></button>
+        <button><a href="#down" onclick="return show('About Page','My Website');"><div id="down"><h3>About Page</h3></div></a></button>
     </div> </h1>
     
 
